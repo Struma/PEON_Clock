@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Frame" id="Frame_1">
+    <property name="height">0</property>
+    <property name="style">BACK.TFrame</property>
+    <property name="width">0</property>
+    <layout>
+      <property name="propagate">True</property>
+      <property name="sticky">nsew</property>
+      <rows>
+        <row id="0">
+          <property name="weight">2</property>
+        </row>
+        <row id="1">
+          <property name="weight">1</property>
+        </row>
+        <row id="10">
+          <property name="weight">1</property>
+        </row>
+        <row id="11">
+          <property name="weight">1</property>
+        </row>
+        <row id="12">
+          <property name="weight">1</property>
+        </row>
+        <row id="13">
+          <property name="weight">1</property>
+        </row>
+        <row id="2">
+          <property name="weight">1</property>
+        </row>
+        <row id="3">
+          <property name="weight">1</property>
+        </row>
+        <row id="4">
+          <property name="weight">1</property>
+        </row>
+        <row id="5">
+          <property name="weight">1</property>
+        </row>
+        <row id="6">
+          <property name="weight">1</property>
+        </row>
+        <row id="7">
+          <property name="weight">1</property>
+        </row>
+        <row id="8">
+          <property name="weight">1</property>
+        </row>
+        <row id="9">
+          <property name="weight">1</property>
+        </row>
+      </rows>
+      <columns>
+        <column id="0">
+          <property name="minsize">300</property>
+          <property name="weight">1</property>
+        </column>
+      </columns>
+    </layout>
+    <child>
+      <object class="ttk.Label" id="TimeDate">
+        <property name="anchor">center</property>
+        <property name="style">TIME.TLabel</property>
+        <property name="text" translatable="yes">Mon 12:23:00 Dec 2019</property>
+        <property name="textvariable">string:TD_label</property>
+        <property name="underline">0</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="padx">30</property>
+          <property name="pady">30</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">nsew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="img">
+        <property name="anchor">center</property>
+        <property name="image">peon1.gif</property>
+        <property name="style">BW.TLabel</property>
+        <property name="text" translatable="yes"> </property>
+        <layout>
+          <property name="column">0</property>
+          <property name="columnspan">1</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property name="sticky">nsew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="Death_time">
+        <property name="anchor">center</property>
+        <property name="style">BW.TLabel</property>
+        <property name="text" translatable="yes">You are predicted to die : Jun 2099</property>
+        <property name="textvariable">string:death_time</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="pady">7</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+          <property name="sticky">nsew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="loan_amount">
+        <property name="anchor">center</property>
+        <property name="style">BW.TLabel</property>
+        <property name="text" translatable="yes">You Owe $1,000,000 - get to work.</property>
+        <property name="textvariable">string:loan_value</property>
+        <property name="underline">0</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="pady">7</property>
+          <property name="propagate">True</property>
+          <property name="row">3</property>
+          <property name="sticky">new</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="Remain_peonage_label">
+        <property name="anchor">center</property>
+        <property name="style">BW.TLabel</property>
+        <property name="text" translatable="yes">Remaining Peonage Time</property>
+        <property name="textvariable">string:remain</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="padx">50</property>
+          <property name="propagate">True</property>
+          <property name="row">4</property>
+          <property name="sticky">nsew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="decade">
+        <property name="anchor">center</property>
+        <property name="style">BW.TLabel</property>
+        <property name="text" translatable="yes">Decades :</property>
+        <property name="textvariable">string:decades</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">5</property>
+          <property name="sticky">nsew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="year">
+        <property name="anchor">center</property>
+        <property name="style">BW.TLabel</property>
+        <property name="text" translatable="yes">Years :</property>
+        <property name="textvariable">string:years</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">6</property>
+          <property name="sticky">nsew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="month">
+        <property name="anchor">center</property>
+        <property name="style">BW.TLabel</property>
+        <property name="text" translatable="yes">Months :</property>
+        <property name="textvariable">string:months</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">7</property>
+          <property name="sticky">nsew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="day">
+        <property name="anchor">center</property>
+        <property name="style">BW.TLabel</property>
+        <property name="text" translatable="yes">Days :</property>
+        <property name="textvariable">string:days</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">8</property>
+          <property name="sticky">nsew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="hour">
+        <property name="anchor">center</property>
+        <property name="style">BW.TLabel</property>
+        <property name="text" translatable="yes">Hours :</property>
+        <property name="textvariable">string:hours</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">9</property>
+          <property name="sticky">nsew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="minute">
+        <property name="anchor">center</property>
+        <property name="style">BW.TLabel</property>
+        <property name="text" translatable="yes">Minutes :</property>
+        <property name="textvariable">string:minutes</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">10</property>
+          <property name="sticky">nsew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="second">
+        <property name="anchor">center</property>
+        <property name="style">BW.TLabel</property>
+        <property name="text" translatable="yes">Seconds :</property>
+        <property name="textvariable">string:seconds</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">11</property>
+          <property name="sticky">nsew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="release">
+        <property name="anchor">center</property>
+        <property name="style">BW.TLabel</property>
+        <property name="text" translatable="yes">Estimated time of release :</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">12</property>
+          <property name="sticky">nsew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="releaseTime">
+        <property name="anchor">center</property>
+        <property name="style">TIMER.TLabel</property>
+        <property name="text" translatable="yes">Mon 12:23:00 Dec 2099</property>
+        <property name="textvariable">string:release_time</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="pady">30</property>
+          <property name="propagate">True</property>
+          <property name="row">13</property>
+          <property name="sticky">nsew</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
